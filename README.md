@@ -1,1 +1,1 @@
-# SmartTourism
+# SmartTourismGSE
