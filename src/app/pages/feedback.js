@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/FeedbackPage.css';
 
 export default function FeedbackPage() {
     const [feedback, setFeedback] = useState('');
