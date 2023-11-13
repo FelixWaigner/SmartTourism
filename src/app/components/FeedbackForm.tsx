@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 const FeedbackForm = () => {
   const [feedback, setFeedback] = useState('');
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const handleSubmit = () => {
     // Handle the form submission, e.g., send data to an API
     console.log('Feedback submitted:', feedback);
   };
@@ -16,8 +15,8 @@ const FeedbackForm = () => {
       <div className="mb-2 block">
         <Label htmlFor="comment" value="Your comments" />
       </div>
-      <Textarea id="comment" placeholder="Leave a comment..." required rows={4} />
-      <Button color='dark' className='mt-5'>Post comments</Button>
+      <Textarea value={feedback} onChange={e => setFeedback(e.target.value)} id="comment" placeholder="Leave a comment..." required rows={4} />
+      <Button onClick={handleSubmit} color='dark' className='mt-5'>Post comments</Button>
     </div>
   );
 };
