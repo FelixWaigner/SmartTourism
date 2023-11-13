@@ -10,7 +10,7 @@ const FeedbackForm = () => {
   };
 
   return (
-    <div className="max-w-md">
+    <div className="max-w-md container mx-auto">
       <div className='text-2xl text-center font-bold'>Feedback Form</div>
       <div className="mb-2 block">
         <Label htmlFor="comment" value="Your comments" />
