@@ -91,7 +91,7 @@ ipython_config.py
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
 #   However, in case of collaboration, if having platform-specific dependencies or dependencies
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
+#   intall all needed dependencies.
 #Pipfile.lock
 
 # poetry
@@ -154,9 +154,9 @@ cython_debug/
 node_modules/
 .next/
 next-env.d.ts
+
 pnpm-lock.yaml
 package-lock.json
-
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can

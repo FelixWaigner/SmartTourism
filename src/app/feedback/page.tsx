@@ -1,13 +1,13 @@
 "use client"
-import React, { useState } from 'react';
-import FeedbackForm from '../components/FeedbackForm';
 
+import React, { useState } from "react"
+import FeedbackForm from "../components/FeedbackForm"
 
-
-export default function Feedback(){
-    return (
-        <div>
-            <FeedbackForm />
-        </div>
-      );
+export default function Feedback() {
+  return (
+    <div>
+      <h3 className="mt-10 font-bold">Feedback</h3>
+      <FeedbackForm />
+    </div>
+  )
 }
