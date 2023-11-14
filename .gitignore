@@ -154,6 +154,8 @@ cython_debug/
 node_modules/
 .next/
 next-env.d.ts
+pnpm-lock.yaml
+package-lock.json
 
 
 # PyCharm
