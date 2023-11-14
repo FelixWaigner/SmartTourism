@@ -11,7 +11,7 @@ const FeedbackForm = () => {
   }
 
   return (
-    <div className="w-full mt-5 mb-24">
+    <div className="mx-auto mt-5 mb-24 container">
       <form className="w-full" onSubmit={handleSubmit}>
         <div className="mb-2 block">
           <Label htmlFor="comment" value="Your comments" />
