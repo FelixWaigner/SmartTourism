@@ -2,6 +2,7 @@
 import { useEffect, Suspense, useState } from "react";
 import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import { Spinner } from "flowbite-react";
 
 
 export default function PanelLayout({
@@ -25,7 +26,7 @@ export default function PanelLayout({
   return (
     <section>
       <h1 className=" text-4xl">Panel</h1>
-      <Suspense fallback={<p>Loading feed...</p>}>
+      <Suspense fallback={<Loading />}>
         {children}
       </Suspense>
     </section>
@@ -41,4 +42,12 @@ export default function PanelLayout({
     // } else {
     //   <h1>Loading ...</h1>
     // }
+  }
+
+  function Loading() {
+    return (
+      <div className="text-center">
+        <Spinner aria-label="Center-aligned spinner example" />
+      </div>
+    );
   }
