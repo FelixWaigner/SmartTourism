@@ -24,7 +24,7 @@ function Page() {
 
     // Sign up successful
     console.log( result );
-
+    router.push( '/login' );
     // Redirect to the admin page
   }
 
