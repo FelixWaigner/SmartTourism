@@ -1,6 +1,6 @@
 "use client"
 
-import Menu from "../components/navigation/menu"
+import Menu from "@/components/navigation/menu";
 
 export default function Dashboard() { 
     return(

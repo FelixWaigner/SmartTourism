@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import ConfigItem from '../components/configurator/config-item';
+import ConfigItem from '@/components/configurator/config-item';
 
 
 // Define the type for the component's state, which includes an array of selected items
