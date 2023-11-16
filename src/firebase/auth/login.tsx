@@ -6,7 +6,7 @@ import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 const auth = getAuth( firebase_app );
 
 // function to sign in with email and password
-export default async function signIn(
+export default async function LogIn(
     email: string, 
     password: string
 ){

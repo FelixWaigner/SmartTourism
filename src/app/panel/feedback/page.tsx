@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from "react"
-import FeedbackForm from "../components/FeedbackForm"
+import FeedbackForm from "@/components/FeedbackForm"
 
 export default function Feedback() {
   return (
