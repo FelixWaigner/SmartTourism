@@ -19,35 +19,26 @@ export default function PanelLayout({
     if ( user == null ) {
       router.push( "/" );
     }
-    // setLoggedIn(true)
+    setLoggedIn(true)
     // }, [ user ] );
   }, [ user, router ] ); // Include 'router' in the dependency array to resolve eslint warning
 
-  return (
-    <section>
-      <h1 className=" text-4xl">Panel</h1>
-      <Suspense fallback={<Loading />}>
-        {children}
-      </Suspense>
-    </section>
-  )
+  // return (
+  //   <section>
+  //     <Suspense fallback={<Loading />}>
+  //       {children}
+  //     </Suspense>
+  //   </section>
+  // )
 
-    // if (loggedIn){
-    //   return (
-    //     <section>
-    //       <h1 className=" text-4xl">Panel</h1>
-    //       {children}
-    //     </section>
-    //   )
-    // } else {
-    //   <h1>Loading ...</h1>
-    // }
-  }
-
-  function Loading() {
-    return (
-      <div className="text-center">
-        <Spinner aria-label="Center-aligned spinner example" />
-      </div>
-    );
+    if (loggedIn){
+      return (
+        <section>
+          <h1 className=" text-4xl">Panel</h1>
+          {children}
+        </section>
+      )
+    } else {
+      <h1>Loading ...</h1>
+    }
   }
