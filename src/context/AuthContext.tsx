@@ -1,7 +1,7 @@
 'use client'
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { getAuth, onAuthStateChanged, User } from "firebase/auth";
-import firebase_app from "@/db/firebase";
+import firebase_app from "@/firebase/firebase";
 
 // initialize firebase auth instance
 const auth = getAuth( firebase_app );
