@@ -24,12 +24,9 @@ const FeedbackForm = () => {
           rows={4}
           required
         />
-        <button
-          className="w-full relative text-white bg-green-400 hover-bg-green-500 focus:outline-none focus:ring-4 focus-ring-green-300 font-medium rounded-full text-sm px-5 py-3.5 text-center dark-bg-blue-600 dark-hover-bg-blue-700 dark-focus-ring-blue-800 mt-5"
-          type="submit"
-        >
-          Submit Feedback
-        </button>
+        <div className="mt-2">
+          <Button color="success" type="submit" pill>Submit Feedback</Button>
+        </div>
       </form>
     </div>
   )
