@@ -16,15 +16,15 @@ function Page() {
     // Attempt to sign up with provided email and password
     const { result, error } = await signUp( email, password );
 
-    if ( error ) {
+    if ( error.code === 'auth/email-already-in-use' ) {
       // Display and log any sign-up errors
-      console.log( error );
+      console.log( error.code );
       return;
     }
 
     // Sign up successful
-    console.log( result );
-    router.push( '/login' );
+    // console.log( result );
+    // router.push( '/login' );
     // Redirect to the admin page
   }
 
