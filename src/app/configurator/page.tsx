@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from 'react';
 import ConfigItem from '@/components/configurator/config-item';
+import { signOut, getAuth } from 'firebase/auth';
+import firebase_app from '@/firebase/firebase';
 
 
 // Define the type for the component's state, which includes an array of selected items
@@ -34,11 +36,30 @@ export default function Configurator() {
     //Send data to recommender system API here
   };
 
+  const handleSignOut = () => {
+    
+    try {
+      const auth = getAuth( firebase_app );
+      signOut(auth)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
     <div>
-      <h3 className='mt-10 font-bold'>Welcome to Malang</h3>
-      <p className="text-gray-500 dark:text-gray-400 mt-3">Tell us more about your interests so we can create a personalized trip for you.</p>
-
+      <div className="flex flex-row w-full justify-between">
+        <div className="flex-col flex">
+          <h3 className='mt-10 font-bold'>Welcome to Malang</h3>
+          <p className="text-gray-500 dark:text-gray-400 mt-3">Tell us more about your interests so we can create a personalized trip for you.</p>
+        </div>
+        <button
+            type="button"
+            onClick={ handleSignOut }>
+            Sign out
+        </button>
+      </div>
+    
       <div className="mt-12 mb-24">
         <ul className="grid grid-cols-2 gap-2">
           {activities.map((activity, index) => (
