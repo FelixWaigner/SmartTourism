@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import ConfigItem from '@/components/configurator/config-item';
+import { useRouter } from 'next/navigation'
 
 
 // Define the type for the component's state, which includes an array of selected items
@@ -11,6 +12,8 @@ type ConfiguratorState = {
 
 export default function Configurator() {
   
+  const router = useRouter()
+
   //Activities
   const activities = ["Hiking", "Relax", "Picnic", "Sports", "Attractions", "Games", "Water", "Playground", "Coffee", "Shopping", "Culinary"];
 
@@ -31,7 +34,7 @@ export default function Configurator() {
   // Function to handle the "Next" button click
   const handleNextButtonClick = () => {
     console.log("Selected Items:", state.selectedItems);
-
+    router.push('/dashboard')
     //Send data to recommender system API here
   };
 
