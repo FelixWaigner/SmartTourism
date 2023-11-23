@@ -5,31 +5,21 @@ from myapikey import apikey
 import configparser
 import pprint
 
+os.environ["OPENAI_API_KEY"] = apikey()
 
-def ask_chatbot(bot, question: str) -> str:
-    return bot.query(question)
+tourism_bot = App()
 
-def main() -> None:
-    if len(sys.argv) > 2:
-        return EOFError
-    
-    os.environ["OPENAI_API_KEY"] = apikey()
+# Tumpak Sewu Waterfalls
+# TODO: List all of the tourism spots
 
-    tourism_bot = App()
+tourism_bot.add("https://en.wikipedia.org/wiki/Tumpak_Sewu_Waterfalls")
+tourism_bot.add('https://id.wikipedia.org/wiki/Museum_Brawijaya')
+# tourism_bot.add("http://javaisbeautiful.com/2016/08/08/tumpak-sewu-waterfall-lumajang-malang-east-java-indonesia/")
 
-    # Tumpak Sewu Waterfalls
-    # TODO: List all of the tourism spots
-
-    tourism_bot.add("https://en.wikipedia.org/wiki/Tumpak_Sewu_Waterfalls")
-    tourism_bot.add('https://id.wikipedia.org/wiki/Museum_Brawijaya')
-    # tourism_bot.add("http://javaisbeautiful.com/2016/08/08/tumpak-sewu-waterfall-lumajang-malang-east-java-indonesia/")
-
-    # Mount Bromo
-    tourism_bot.add("https://en.wikipedia.org/wiki/Mount_Bromo")
-
-    print(ask_chatbot(tourism_bot, sys.argv[1]))
-    # print(sys.argv[1])
+# Mount Bromo
+tourism_bot.add("https://en.wikipedia.org/wiki/Mount_Bromo")
 
 
-if __name__ == '__main__':
-    pass
+
+def ask_chatbot(question: str) -> str:
+    return tourism_bot.query(question)
