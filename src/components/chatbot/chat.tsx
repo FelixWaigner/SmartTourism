@@ -38,7 +38,7 @@ export default function Chat() {
       <CardHeader>
         <CardTitle className="text-lg">Chatbot</CardTitle>
         <CardDescription className=" leading-3">
-          Powered by Mendable and Vercel
+            MalanGo Chatbot
         </CardDescription>
       </CardHeader>
       <CardContent className="">
