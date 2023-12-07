@@ -1,45 +1,43 @@
-import { OpenAIStream, StreamingTextResponse } from "ai";
-import { welcomeMessage } from "@/lib/strings";
+import OpenAI from 'openai';
+import { AIStream, OpenAIStream, StreamingTextResponse } from 'ai';
+import { welcomeMessage } from '@/lib/strings';
 
+const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+  });
 
 export const runtime = 'edge';
 
 export async function POST(req: Request){
-    // Extract the messages from the body of the request
     const { messages } = await req.json();
-
-    // question is on the last message
-    const question = messages[messages.length - 1].content;
-    messages.pop();
-
-    const url = 'https://127.0.0.1:5000';
-
-    const data = {
-        api_key: process.env.MENDABLE_API_KEY,
-    };
-
-    const response = await fetch(url, {
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
+    // Create a chat completion using OpenAI
+    const response = await openai.chat.completions.create({
+        model: 'gpt-4',
+        stream: true,
+        messages,
     });
 
-    const conversation_id = await response.json();
+    // const response = new Response('This is a test text');
+    console.log(response);
+    // // Extract the messages from the body of the request
+    // const { messages } = await req.json();
 
-    const history = [];
-    for (let i = 0; i < messages.length; i += 2){
-        history.push({
-            prompt: messages[i].content,
-            response: messages[i + 1].content,
-        });
-    }
+    // // question is on the last message
+    // const question = messages[messages.length - 1].content;
+    // messages.pop();
 
-    history.unshift({
-        prompt: '',
-        response: welcomeMessage,
-    });
+    // const url = 'https://en.wikipedia.org/wiki/Mount_Bromo';
+
+    // const data = {};
+
+    // const response = await fetch(url, {
+    //     method: "POST",
+    //     headers: {
+    //         "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(data)
+    // });
+    // console.log(response);
 
     const stream = OpenAIStream(response)
 
