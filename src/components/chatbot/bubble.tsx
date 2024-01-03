@@ -60,7 +60,7 @@ export default function Bubble({
 
       <p className="leading-relaxed">
         <span className="block font-bold text-gray-700">
-          {message.role === "user" ? "You" : "AI"}{" "}
+          {message.role === "user" ? "You" : "MalanGo AI"}{" "}
         </span>
         {!loading && message.content}
         {loading && (

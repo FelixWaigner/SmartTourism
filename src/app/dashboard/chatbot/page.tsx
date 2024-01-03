@@ -1,3 +1,5 @@
+'use client';
+import dynamic from "next/dynamic";
 import Chat from "@/components/chatbot/chat";
 import { Button } from "@/components/ui/button";
 import {
@@ -7,11 +9,17 @@ import {
 } from "@/components/ui/popover";
 import { MessageCircle } from "lucide-react";
 
-export default function Home() {
+const DynamicMap = dynamic(() => import('@/components/map/Map'), {
+  ssr: false
+});
+
+
+export default function Page() {
   return (
     <div className="flex bg-gray-50 min-h-screen items-center justify-center">
+    <DynamicMap />
       <Popover>
-        <PopoverContent align="start" className="w-[440px] mr-4">
+        <PopoverContent align="start" className="w-[440px] mr-4 z-50">
           <Chat />
         </PopoverContent>
         <PopoverTrigger asChild className="fixed bottom-4 right-4">
@@ -23,6 +31,6 @@ export default function Home() {
           </Button>
         </PopoverTrigger>
       </Popover>
-    </div>
+      </div>
   );
 }

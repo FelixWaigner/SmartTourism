@@ -18,7 +18,7 @@ export async function POST(req: Request){
     });
 
     // const response = new Response('This is a test text');
-    console.log(response);
+
     // // Extract the messages from the body of the request
     // const { messages } = await req.json();
 
