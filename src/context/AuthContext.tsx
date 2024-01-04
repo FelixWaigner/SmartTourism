@@ -2,6 +2,7 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { getAuth, onAuthStateChanged, User } from "firebase/auth";
 import firebase_app from "@/firebase/firebase";
+import { Oval } from "react-loader-spinner";
 
 // initialize firebase auth instance
 const auth = getAuth( firebase_app );
@@ -41,7 +42,7 @@ export function AuthContextProvider( { children }: AuthContextProvideProps ): Re
 
     return (
         <AuthContext.Provider value={{ user }}>
-            {loading ? <div>Loading...</div> : children}
+            {loading ? <div className="flex bg-gray-50 min-h-screen items-center justify-center"><Oval height={40} width={40} /></div> : children}
         </AuthContext.Provider>
     )
 }
