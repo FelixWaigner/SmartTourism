@@ -42,7 +42,7 @@ export function AuthContextProvider( { children }: AuthContextProvideProps ): Re
 
     return (
         <AuthContext.Provider value={{ user }}>
-            {loading ? <div className="flex bg-gray-50 min-h-screen items-center justify-center"><Oval height={40} width={40} /></div> : children}
+            {loading ? <div className="flex bg-gray-50 min-h-screen items-center justify-center"><Oval height={20} width={20} /></div> : children}
         </AuthContext.Provider>
     )
 }
