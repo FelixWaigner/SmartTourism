@@ -7,41 +7,41 @@ export function BarChart(props: any) {
       <ResponsiveBar
         data={[
           {
-            name: "A",
+            name: "Hiking",
             data: 111,
           },
           {
-            name: "B",
+            name: "Relax",
             data: 157,
           },
           {
-            name: "C",
+            name: "Picnic",
             data: 129,
           },
           {
-            name: "D",
+            name: "Sports",
             data: 187,
           },
           {
-            name: "E",
+            name: "Attractions",
             data: 119,
           },
           {
-            name: "F",
+            name: "Games",
             data: 22,
           },
           {
-            name: "G",
+            name: "Water",
             data: 101,
           },
           {
-            name: "H",
+            name: "Culinary",
             data: 83,
           },
         ]}
         keys={["data"]}
         indexBy="name"
-        margin={{ top: 50, right: 50, bottom: 50, left: 60 }}
+        margin={{ top: 50, right: 50, bottom: 70, left: 60 }}
         padding={0.3}
         valueScale={{ type: "linear" }}
         indexScale={{ type: "band", round: true }}
@@ -57,7 +57,7 @@ export function BarChart(props: any) {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: "Name",
+          legend: "Preferences",
           legendPosition: "middle",
           legendOffset: 45,
           truncateTickAt: 0,
@@ -66,12 +66,23 @@ export function BarChart(props: any) {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: "Number",
+          legend: "Number of people",
           legendPosition: "middle",
           legendOffset: -45,
           truncateTickAt: 0,
         }}
         theme={{
+          axis: {
+            legend: {
+              text: {
+                fontSize: "16px",
+                outlineWidth: 10,
+              },
+            },
+          },
+          text:{
+            fontSize: "16px",
+          },
           tooltip: {
             container: {
               fontSize: "12px",

@@ -43,7 +43,7 @@ export default function Dashboard() {
           <h1 className="font-semibold text-3xl">User Density Dashboard</h1>
           <Card className="p-0 overflow-hidden">
             <CardHeader>
-              <CardDescription className="text-sm font-medium">Map Visualization</CardDescription>
+              <CardDescription className="text-xl font-medium">Map Visualization</CardDescription>
             </CardHeader>
             <CardContent className="p-0">
               <BarChart className="w-full aspect-[16/9]" />
@@ -53,19 +53,19 @@ export default function Dashboard() {
         <div className="grid gap-6 max-w-6xl w-full mx-auto">
           <Card className="p-0 overflow-hidden">
             <CardHeader>
-              <CardDescription className="text-sm font-medium">Average Density</CardDescription>
-              <CardTitle className="text-2xl">158 people/sq mi</CardTitle>
+              <CardDescription className="text-xl font-medium">Average Density</CardDescription>
+              <CardTitle className="text-2xl">158 people</CardTitle>
             </CardHeader>
           </Card>
           <Card className="p-0 overflow-hidden">
             <CardHeader>
-              <CardDescription className="text-sm font-medium">Peak Density</CardDescription>
-              <CardTitle className="text-2xl">312 people/sq mi</CardTitle>
+              <CardDescription className="text-xl font-medium">Peak Density</CardDescription>
+              <CardTitle className="text-2xl">312 people</CardTitle>
             </CardHeader>
           </Card>
           <Card className="p-0 overflow-hidden">
             <CardHeader>
-              <CardDescription className="text-sm font-medium">Demographic Information</CardDescription>
+              <CardDescription className="text-xl font-medium">Demographic Information</CardDescription>
             </CardHeader>
             <CardContent>
               <PieChart className="w-full aspect-[16/9]" />
