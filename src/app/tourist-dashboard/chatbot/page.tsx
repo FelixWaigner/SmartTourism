@@ -16,10 +16,10 @@ const DynamicMap = dynamic(() => import('@/components/map/Map'), {
 
 export default function Page() {
     return (
-        <div className="flex bg-gray-50 min-h-screen items-center justify-center">
+        <div className="aslkdnaslkdna flex bg-gray-50 min-h-screen items-center justify-center">
             <DynamicMap />
             <Popover>
-                <PopoverContent align="start" className="w-[300px] mr-4 z-50">
+                <PopoverContent align="start" className="w-full z-50">
                     <Chat />
                 </PopoverContent>
                 <PopoverTrigger asChild className="fixed bottom-4 right-4">
