@@ -19,7 +19,7 @@ export default function Page() {
         <div className="aslkdnaslkdna flex bg-gray-50 min-h-screen items-center justify-center">
             <DynamicMap />
             <Popover>
-                <PopoverContent align="start" className="w-full z-50">
+                <PopoverContent className="w-[370px] z-50 mr-3">
                     <Chat />
                 </PopoverContent>
                 <PopoverTrigger asChild className="fixed bottom-4 right-4">
