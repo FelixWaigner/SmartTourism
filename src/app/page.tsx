@@ -5,16 +5,29 @@ import { Button } from 'flowbite-react'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center space-y-1 min-h-screen justify-center">
+    <div className="flex flex-col mx-auto max-w-[350px] space-y-6 justify-center min-h-screen">
+      <div className="space-y-2 text-center">
+        <h1 className="text-3xl font-bold">MalanGo</h1>
+        <p className="text-gray-500 dark:text-gray-400">Select your user type to proceed</p>
+      </div>
+      <div className="flex flex-col space-y-2">
         <Link href='/dashboard'>
-          <Button color='success'>Login as tourist</Button>
+          <Button className="w-full flex space-y-2 items-center gap-2">
+            Tourist
+          </Button>
         </Link>
         <Link href='/gov'>
-          <Button color='success'>Login as government</Button>
+          <Button className="w-full flex space-y-2 items-center gap-2">
+            Government
+          </Button>
         </Link>
         <Link href='/business'>
-          <Button color='success'>Login as business</Button>
+          <Button className="w-full flex space-y-2 items-center gap-2">
+            Business
+          </Button>
         </Link>
-    </main>
+      </div>
+    </div>
   )
 }
+
