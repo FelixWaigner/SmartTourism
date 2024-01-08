@@ -1,21 +1,20 @@
 'use client'
-import { useRouter } from 'next/navigation'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from 'flowbite-react'
 
 
 export default function Home() {
   return (
-    <main className="flex flex-row items-center p-24">
-      <div className="mx-auto flex flex-row space-x-4">
-        <Link href='/login'>
-          <Button color='dark'>Login</Button>
+    <main className="flex flex-col items-center space-y-1 min-h-screen justify-center">
+        <Link href='/dashboard'>
+          <Button color='success'>Login as tourist</Button>
         </Link>
-        <Link href='/signup'>
-          <Button color='dark'>Signup</Button>
+        <Link href='/gov'>
+          <Button color='success'>Login as government</Button>
         </Link>
-      </div>
+        <Link href='/business'>
+          <Button color='success'>Login as business</Button>
+        </Link>
     </main>
   )
 }
