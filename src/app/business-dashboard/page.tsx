@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@/components/ui/select"
-import { Button } from "flowbite-react"
+import { Button } from "@/components/ui/button"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 import { FileIcon } from "@/components/icon/file"
 import { SearchIcon } from "@/components/icon/search"
@@ -105,7 +105,7 @@ export default function Page() {
                   </Select>
                 </div>
                 <div className="flex justify-end">
-                  <Button color="success" type="submit">Submit Document</Button>
+                  <Button type="submit">Submit Document</Button>
                 </div>
               </div>
             </form>
