@@ -161,4 +161,4 @@ next-env.d.ts
 #.idea/
 
 # mac file
-.DS_Store
+*.DS_Store
