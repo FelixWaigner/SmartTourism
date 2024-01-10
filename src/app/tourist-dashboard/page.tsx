@@ -21,7 +21,7 @@ export default function Dashboard() {
         setIsModalOpen(false);
     };
     return (
-        <div>
+        <div className="p-4">
             <h3 className="mt-10 mb-10">Your Trip</h3>
 
 
