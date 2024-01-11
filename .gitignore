@@ -162,3 +162,4 @@ next-env.d.ts
 
 # mac file
 *.DS_Store
+bun.lockb
