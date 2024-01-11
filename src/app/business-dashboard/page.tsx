@@ -42,20 +42,16 @@ export default function Page() {
                   <Input id="date" type="date" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="description">Description</Label>
-                  <Textarea id="description" placeholder="Enter document description" />
-                </div>
-                <div className="space-y-2">
                   <Label htmlFor="category">Business type</Label>
                   <Select>
                     <SelectTrigger id="category">
                       <SelectValue placeholder="Select category" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="finance">Culinary</SelectItem>
-                      <SelectItem value="hr"></SelectItem>
-                      <SelectItem value="marketing">Marketing</SelectItem>
-                      <SelectItem value="operations">Operations</SelectItem>
+                      <SelectItem value="culinary">Culinary</SelectItem>
+                      <SelectItem value="attractions">Attractions</SelectItem>
+                      <SelectItem value="shopping">Shopping</SelectItem>
+                      <SelectItem value="sports ">Operations</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -72,6 +68,10 @@ export default function Page() {
                       <SelectItem value="operations">Operations</SelectItem>
                     </SelectContent>
                   </Select>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="description">Description</Label>
+                  <Textarea id="description" placeholder="Enter document description" />
                 </div>
                 <div className="flex justify-end">
                   <Button type="submit">Submit Document</Button>

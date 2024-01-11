@@ -55,7 +55,7 @@ export default function BusinessLayout({children,
                 href="#"
               >
                 <LineChartIcon className="h-4 w-4" />
-                Analytics
+                Submitted Documents
               </Link>
             </nav>
           </div>

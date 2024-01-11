@@ -111,7 +111,7 @@ export default function Configurator() {
   };
 
   return (
-    <div>
+    <div className='p-4'>
       <h3 className='mt-10 font-bold'>Welcome to Malang</h3>
       <p className="text-gray-500 dark:text-gray-400 mt-3">Tell us about your interests and desired duration of stay so we can create a personalized trip for you.</p>
 
