@@ -106,6 +106,7 @@ export default function Configurator() {
   // Function to handle the "Next" button click
   const handleNextButtonClick = () => {
     console.log("Selected Items:", state.selectedItems);
+    console.log("days spent: ", count)
     router.push('/tourist-dashboard')
     //Send data to recommender system API here
   };

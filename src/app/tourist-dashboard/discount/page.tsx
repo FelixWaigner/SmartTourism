@@ -14,7 +14,7 @@ export default function Discount() {
     //<div className="absolute left-0 top-0 w-full h-full"></div>
 
     return (
-        <div>
+        <div className="p-4">
             <h3 className="mt-10 mb-10">Your Discount</h3>
             <p>You got a discount for <u>Malang Night Paradise</u></p>
             <div className="mt-5 py-5">
