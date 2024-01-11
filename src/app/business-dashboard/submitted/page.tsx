@@ -1,12 +1,20 @@
 'use client'
-import { useEffect, useState } from 'react'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 import { SearchIcon } from "@/components/icon/search"
 
 
-export default async function Page() {
+
+export default function Page() {
+  const message = 'testing'
+  const fetchJoe = async () => {
+    const response = await fetch('/api/business', {
+      method: "POST"
+    })
+    const data = await response.json()
+    console.log(data.data)
+  }
   return (
       <div className="flex flex-col">
       <header className="flex h-14 lg:h-[60px] items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
@@ -28,7 +36,8 @@ export default async function Page() {
           <h1 className="font-semibold text-lg md:text-2xl">Submitted Documents</h1>
         </div>
         <div className="border shadow-sm rounded-lg">
-          <Table>
+          <Button onClick={fetchJoe}>Try fetching data</Button>
+          {/* <Table>
             <TableHeader>
               <TableRow>
                 <TableHead>Title</TableHead>
@@ -53,7 +62,7 @@ export default async function Page() {
               </TableRow>
             ))}
             </TableBody>
-          </Table>
+          </Table> */}
         </div>
       </main>
     </div>
