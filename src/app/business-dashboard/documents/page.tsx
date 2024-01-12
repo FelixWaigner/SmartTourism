@@ -5,14 +5,35 @@ import { Textarea } from "@/components/ui/textarea"
 import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
 import { useToast } from "@/components/ui/use-toast"
+import data from '@/app/data/business-data.json'
+import { promises as fs } from "fs"
 
 export default function Page() {
   const { toast } = useToast()
-  // function onSubmit(){
-  //   toast({
-  //     description: "Your message has been sent.",
-  //   })
-  // }
+  const tempData = JSON.parse(JSON.stringify(data))
+
+  const newData = {
+    "title": "test",
+    "date": "2024-01-05",
+    "businessType": "Culinary",
+    "capacity": 500,
+    "category": "Finance",
+    "description": "Annual report",
+    "status": "Processing"
+  }
+
+  tempData.push(newData)
+  fs.writeFile("@/app/data/business-data.json", JSON.stringify(tempData), function(err: any) {
+    if (err) {
+        console.log(err);
+    }
+  })
+
+  function click(){
+    toast({
+      description: "Your message has been sent.",
+    })
+  }
   return (
       <div className="flex flex-col">
       <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
@@ -20,8 +41,7 @@ export default function Page() {
           <h1 className="font-semibold text-lg md:text-2xl">Submit Document</h1>
         </div>
         <div className="border shadow-sm rounded-lg">
-          <form className="p-4">
-            <div className="grid gap-4">
+            <div className="grid gap-4 p-4">
               <div className="space-y-2">
                 <Label htmlFor="title">Title</Label>
                 <Input id="title" type="text" placeholder="Enter document title"/>
@@ -67,10 +87,9 @@ export default function Page() {
                 <Textarea id="description" placeholder="Enter document description" />
               </div>
               <div className="flex justify-end">
-                <Button>Submit Document</Button>
+                <Button onClick={click}>Submit Document</Button>
               </div>
             </div>
-          </form>
         </div>
       </main>
     </div>
