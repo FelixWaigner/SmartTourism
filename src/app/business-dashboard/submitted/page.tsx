@@ -16,6 +16,8 @@ export default function Page() {
   //   const data = await response.json()
   //   console.log(data.data)
   // }
+
+
   return (
       <div className="flex flex-col">
       <header className="flex h-14 lg:h-[60px] items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
@@ -44,20 +46,17 @@ export default function Page() {
                 <TableHead>Date</TableHead>
                 <TableHead>Description</TableHead>
                 <TableHead>Category</TableHead>
-                <TableHead>Action</TableHead>
+                <TableHead>Status</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-            {data.map((dat: { title: string; date: string; description: string; category: string}) => (
+            {data.map((dat: { title: string; date: string; description: string; category: string; status: string}) => (
               <TableRow key={dat.title}>
                 <TableCell className="font-medium">{dat.title}</TableCell>
                 <TableCell>{dat.date}</TableCell>
                 <TableCell>{dat.description}</TableCell>
                 <TableCell>{dat.category}</TableCell>
-                <TableCell>
-                  <Button size="sm">
-                    Edit
-                  </Button>
+                <TableCell>{dat.status}
                 </TableCell>
               </TableRow>
             ))}
