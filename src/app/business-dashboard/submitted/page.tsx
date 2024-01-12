@@ -3,9 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 import { SearchIcon } from "@/components/icon/search"
-import { ReactElement, JSXElementConstructor, ReactNode, PromiseLikeOfReactNode, Key, ReactPortal } from "react"
-
-const data = require('@/app/data/business-data.json')
+import data from '@/app/data/business-data.json'
 
 
 export default function Page() {
@@ -16,7 +14,21 @@ export default function Page() {
   //   const data = await response.json()
   //   console.log(data.data)
   // }
-
+  function checkStatus(stats: string){
+    if (stats === "Approved") {
+      return (
+        <div className="text-green-600">
+          {stats}
+        </div>
+      )
+    } else if (stats === "Processing") {
+      return (
+        <div className="text-orange-400">
+          {stats}
+        </div>
+      )
+    }
+  };
 
   return (
       <div className="flex flex-col">
@@ -56,8 +68,7 @@ export default function Page() {
                 <TableCell>{dat.date}</TableCell>
                 <TableCell>{dat.description}</TableCell>
                 <TableCell>{dat.category}</TableCell>
-                <TableCell>{dat.status}
-                </TableCell>
+                <TableCell>{checkStatus(dat.status)}</TableCell>
               </TableRow>
             ))}
             </TableBody>
