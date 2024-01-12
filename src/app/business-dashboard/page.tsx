@@ -1,4 +1,8 @@
+'use client'
+import { Button } from "@/components/ui/button"
+import { useToast } from "@/components/ui/use-toast"
 export default function Page() {
+  const { toast } = useToast()
   return (
       <div className="flex flex-col">
         <header className="flex h-14 lg:h-[60px] items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
