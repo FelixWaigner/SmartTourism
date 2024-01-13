@@ -1,4 +1,5 @@
 'use client'
+import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
@@ -6,9 +7,20 @@ import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@
 import { Button } from "@/components/ui/button"
 import { useToast } from "@/components/ui/use-toast"
 import data from '@/app/data/business-data.json'
-import { promises as fs } from "fs"
+
 
 export default function Page() {
+  const [data, setData] = useState([])
+  const fetchJoe = async () => {
+    const response = await fetch('/business-dashboard/documents/api', {
+      method: "GET"
+    })
+    const data = await response.json()
+    // const parseData = data.data._document.data.value.mapValue.fields
+    console.log(data.data)
+  }
+  fetchJoe()
+
   const { toast } = useToast()
   function click(){
     toast({
