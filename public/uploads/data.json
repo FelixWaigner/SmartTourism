@@ -27,12 +27,12 @@
     "status": "Approved"
   },
   {
-    "title": "Test docs",
+    "title": "Test documents",
     "date": "2024-01-13",
     "businessType": "Shopping",
     "capacity": 250,
-    "category": "Marketing",
-    "description": "This is just a test docs",
+    "category": "Operations",
+    "description": "This is just a test documents",
     "status": "Processing"
   }
 ]
