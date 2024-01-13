@@ -7,14 +7,6 @@ import data from '@/app/data/business-data.json'
 
 
 export default function Page() {
-  const fetchJoe = async () => {
-    const response = await fetch('/api/business', {
-      method: "GET"
-    })
-    const data = await response.json()
-    console.log(data.data)
-  }
-  fetchJoe()
   function checkStatus(stats: string){
     if (stats === "Approved") {
       return (
