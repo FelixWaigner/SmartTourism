@@ -10,28 +10,9 @@ import { promises as fs } from "fs"
 
 export default function Page() {
   const { toast } = useToast()
-  const tempData = JSON.parse(JSON.stringify(data))
-
-  const newData = {
-    "title": "test",
-    "date": "2024-01-05",
-    "businessType": "Culinary",
-    "capacity": 500,
-    "category": "Finance",
-    "description": "Annual report",
-    "status": "Processing"
-  }
-
-  tempData.push(newData)
-  fs.writeFile("@/app/data/business-data.json", JSON.stringify(tempData), function(err: any) {
-    if (err) {
-        console.log(err);
-    }
-  })
-
   function click(){
     toast({
-      description: "Your message has been sent.",
+      description: "Your document has been submitted successfully",
     })
   }
   return (
