@@ -35,6 +35,7 @@
     "leaflet": "^1.9.4",
     "leaflet-defaulticon-compatibility": "^0.1.2",
     "lucide-react": "^0.307.0",
+    "multiselect-react-dropdown": "^2.0.25",
     "next": "14.0.4",
     "openai": "^4.24.2",
     "openai-edge": "^1.2.2",
