@@ -19,7 +19,7 @@ export default function Discount() {
 
             <div className="max-w-md w-full h-full mx-auto z-10 bg-[#f8fafb] rounded-3xl">
                 <div className="flex flex-col">
-                    <div className="bg-white relative border-gray-300 border-2 rounded-3xl p-4 m-4">
+                    <div className="bg-white relative border-gray-300 border-2 rounded-3xl p-4 ">
                         <div className="flex-none sm:flex">
                             <div className=" relative h-32 w-32   sm:mb-0 mb-3 hidden">
                                 <a href="#"
@@ -66,7 +66,7 @@ export default function Discount() {
 
             <div className="max-w-md w-full h-full mx-auto z-10 bg-[#f8fafb] rounded-3xl mb-20">
                 <div className="flex flex-col">
-                    <div className="bg-white relative border-gray-300 border-2 rounded-3xl p-4 m-4">
+                    <div className="bg-white relative border-gray-300 border-2 rounded-3xl p-4 mt-8">
                         <div className="flex-none sm:flex">
                             <div className=" relative h-32 w-32   sm:mb-0 mb-3 hidden">
                                 <a href="#"
