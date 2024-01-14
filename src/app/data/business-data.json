@@ -6,7 +6,7 @@
     "capacity": 1000,
     "category": "Finance",
     "description": "Annual report for the fiscal year 2023",
-    "status": "Processing"
+    "status": "Approved"
   },
   {
     "title": "Marketing Plan",
@@ -24,7 +24,7 @@
     "capacity": 1000,
     "description": "Updated HR policy for 2024",
     "category": "Human Resource",
-    "status": "Approved"
+    "status": "Processing"
   },
   {
     "title": "Test docs",
