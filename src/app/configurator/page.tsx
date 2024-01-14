@@ -41,6 +41,9 @@ export default function Configurator() {
     }
   };
 
+  const dummy = () => {
+  }
+
   //Activities
   const activities = [
     {
@@ -111,7 +114,7 @@ export default function Configurator() {
   };
 
   return (
-    <div>
+    <div className='p-4'>
       <h3 className='mt-10 font-bold'>Welcome to Malang</h3>
       <p className="text-gray-500 dark:text-gray-400 mt-3">Tell us about your interests and desired duration of stay so we can create a personalized trip for you.</p>
 
@@ -123,7 +126,7 @@ export default function Configurator() {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h16" />
               </svg>
             </button>
-            <input type="text" id="bedrooms-input" aria-describedby="helper-text-explanation" className="bg-gray-50 border-x-0 border-gray-300 h-11 font-medium text-center text-gray-900 text-sm focus:ring-green-500 focus:border-green-400 block w-full pb-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" defaultValue={count} required />
+            <input type="text" id="bedrooms-input" aria-describedby="helper-text-explanation" className="bg-gray-50 border-x-0 border-gray-300 h-11 font-medium text-center text-gray-900 text-sm focus:ring-green-500 focus:border-green-400 block w-full pb-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={count} onChange={dummy} required />
             <div className="absolute bottom-1 start-1/2 -translate-x-1/2 rtl:translate-x-1/2 flex items-center text-xs text-gray-400 space-x-1 rtl:space-x-reverse">
               <span> Days</span>
             </div>
