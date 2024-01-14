@@ -4,17 +4,17 @@ import React, { useState } from 'react';
 import ConfigItem from '@/components/configurator/config-item';
 import { useRouter } from 'next/navigation'
 
-import hiking from "@/activity-svgs/hiking.svg";
-import relax from "@/activity-svgs/relax.svg";
-import picnic from "@/activity-svgs/picnic.svg";
-import sports from "@/activity-svgs/sports.svg";
-import attractions from "@/activity-svgs/attractions.svg";
-import water from "@/activity-svgs/water.svg";
-import playground from "@/activity-svgs/playground.svg";
-import coffee from "@/activity-svgs/coffee.svg";
-import shopping from "@/activity-svgs/shopping.svg";
-import culinary from "@/activity-svgs/culinary.svg";
-import action from "@/activity-svgs/action.svg";
+import hiking from "@/assets/activity-svgs/hiking.svg";
+import relax from "@/assets/activity-svgs/relax.svg";
+import picnic from "@/assets/activity-svgs/picnic.svg";
+import sports from "@/assets/activity-svgs/sports.svg";
+import attractions from "@/assets/activity-svgs/attractions.svg";
+import water from "@/assets/activity-svgs/water.svg";
+import playground from "@/assets/activity-svgs/playground.svg";
+import coffee from "@/assets/activity-svgs/coffee.svg";
+import shopping from "@/assets/activity-svgs/shopping.svg";
+import culinary from "@/assets/activity-svgs/culinary.svg";
+import action from "@/assets/activity-svgs/action.svg";
 
 
 
