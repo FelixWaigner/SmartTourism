@@ -13,7 +13,7 @@ export function BarChart(props: any) {
         padding={0.3}
         valueScale={{ type: "linear" }}
         indexScale={{ type: "band", round: true }}
-        colors={{ scheme: "paired" }}
+        colors={{ scheme: "set3" }}
         borderWidth={1}
         borderColor={{
           from: "color",

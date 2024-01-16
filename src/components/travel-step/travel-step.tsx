@@ -50,11 +50,10 @@ export default function TravelStep(props: TravelStepProps) {
             </button>
             {showMoreInfo && (
                 <div className="mt-2">
-                    {/* Replace this with the actual content you want to display */}
                     <Image src={pic} alt="Alun-Alun" className="" />
                     <div className="flex w-full gap-3 mt-3">
-                        <button type="button" className="w-1/2 text-green-700 hover:text-white border-2 border-green-400 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Google Maps</button>
-                        <button type="button" className="w-1/2 text-red-700 hover:text-white border-2 border-red-600 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Change spot</button>
+                        <button type="button" className="w-1/2 text-green-700 hover:text-white border-2 border-green-400 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Google maps</button>
+                        <button type="button" className="w-1/2 text-red-700 hover:text-white border-2 border-red-600 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Change place</button>
                     </div>
                 </div>
             )}

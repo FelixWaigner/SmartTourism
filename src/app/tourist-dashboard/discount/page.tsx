@@ -13,8 +13,8 @@ export default function Discount() {
     };
 
     return (
-        <div>
-            <h3 className="mt-10 mb-8">Your Discount</h3>
+        <div className="p-4">
+            <h3 className="mt-10 mb-8">Your Discounts</h3>
 
 
             <div className="max-w-md w-full h-full mx-auto z-10 bg-[#f8fafb] rounded-3xl">
