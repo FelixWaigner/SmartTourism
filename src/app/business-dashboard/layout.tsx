@@ -3,12 +3,8 @@ import { SidebarNav } from "@/components/navigation/business-sidenav"
 
 const sidebarNavItems = [
     {
-        title: 'Home',
-        href: '/business-dashboard'
-    },
-    {
         title: 'Document',
-        href: '/business-dashboard/documents'
+        href: '/business-dashboard'
     },
     {
         title: 'Submitted Documents',

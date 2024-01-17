@@ -4,6 +4,7 @@
     "date": "2024-01-01",
     "businessType": "Culinary",
     "capacity": 1000,
+    "avgVisitor": 25000,
     "category": "Finance",
     "description": "Annual report for the fiscal year 2023",
     "status": "Approved"
@@ -13,6 +14,7 @@
     "date": "2024-01-02",
     "businessType": "Culinary",
     "capacity": 1000,
+    "avgVisitor": 15000,
     "description": "Marketing plan for Q1 2024",
     "category": "Marketing",
     "status": "Approved"
@@ -22,6 +24,7 @@
     "date": "2024-01-03",
     "businessType": "Culinary",
     "capacity": 1000,
+    "avgVisitor": 20000,
     "description": "Updated HR policy for 2024",
     "category": "Human Resource",
     "status": "Processing"
@@ -31,6 +34,7 @@
     "date": "2024-01-13",
     "businessType": "Shopping",
     "capacity": 250,
+    "avgVisitor": 50000,
     "category": "Marketing",
     "description": "This is just a test docs",
     "status": "Processing"
