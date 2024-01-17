@@ -1033,7 +1033,7 @@ export default function Dashboard() {
 
   return (
     <div className="flex flex-col w-full min-h-screen">
-      <header className="flex items-center h-16 px-4 border-b shrink-0 md:px-6">
+      {/* <header className="flex items-center h-16 px-4 border-b shrink-0 md:px-6">
         <Link className="flex items-center gap-2 text-lg font-semibold sm:text-base mr-4" href="#">
           <FrameIcon className="w-6 h-6" />
           <span className="sr-only">Density Dashboard</span>
@@ -1060,10 +1060,10 @@ export default function Dashboard() {
             </Avatar>
           </Button>
         </div>
-      </header>
+      </header> */}
       <main className="flex min-h-[calc(100vh-_theme(spacing.16))] bg-gray-100/40 flex-1 flex-col gap-4 p-4 md:gap-8 md:p-10 dark:bg-gray-800/40">
         <div className="max-w-6xl w-full mx-auto grid gap-2">
-          <h1 className="font-semibold text-3xl">Data Dashboard</h1>
+          <h1 className="font-semibold text-3xl">Visitors Dashboard</h1>
 
           <Multiselect
             options={places} // Options to display in the dropdown
