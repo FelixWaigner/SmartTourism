@@ -1,12 +1,34 @@
 'use client'
+import { useEffect, useState } from "react"
 import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 import { SearchIcon } from "@/components/icon/search"
-import data from '@/app/data/business-data.json'
+
 
 
 export default function Page() {
+  const [data, setData] = useState([])
+ 
+  useEffect(() => {
+    fetch('/business-dashboard/submitted/api')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data.data)
+      })
+  }, [])
+  // const getData = async () => {
+  //   const response = await fetch('/business-dashboard/submitted/api', {
+  //     method: "GET",
+  //   })
+  //   const dat = await response.json()
+  //   return dat.data
+  // }
+  
+  // useEffect(() => {
+  //   getData().then((dat) => {
+  //     setData(dat)
+  //   })
+  // }, [])
   function checkStatus(stats: string){
     if (stats === "Approved") {
       return (
