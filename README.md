@@ -9,7 +9,7 @@ The focus here was on collaboration in intercultural and global teams. The team 
 
 - **Technical University of Nuremberg, Germany**: Felix Waigner, Andreas Roessler
 - **Ritsumeikan University, Japan**: Michael Evan Santoso, Zhang Yuyao, Suntichaikul Pratch
-- **Brawijaya University, indonesia**: Alifsyah Andi
+- **Brawijaya University, Indonesia**: Alifsyah Andi
 
 ## Protoype showcase
 
