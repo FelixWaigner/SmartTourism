@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Annual Report",
+    "date": "2024-01-01",
+    "businessType": "Culinary",
+    "capacity": 1000,
+    "avgVisitor": 25000,
+    "category": "Finance",
+    "description": "Annual report for the fiscal year 2023",
+    "status": "Approved"
+  },
+  {
+    "title": "Marketing Plan",
+    "date": "2024-01-02",
+    "businessType": "Culinary",
+    "capacity": 1000,
+    "avgVisitor": 15000,
+    "description": "Marketing plan for Q1 2024",
+    "category": "Marketing",
+    "status": "Approved"
+  },
+  {
+    "title": "HR Policy",
+    "date": "2024-01-03",
+    "businessType": "Culinary",
+    "capacity": 1000,
+    "avgVisitor": 20000,
+    "description": "Updated HR policy for 2024",
+    "category": "Human Resource",
+    "status": "Processing"
+  },
+  {
+    "title": "Test docs",
+    "date": "2024-01-13",
+    "businessType": "Shopping",
+    "capacity": 250,
+    "avgVisitor": 50000,
+    "category": "Marketing",
+    "description": "This is just a test docs",
+    "status": "Processing"
+  },
+  {
+    "title": "test docs2",
+    "date": "2024-01-17",
+    "businessType": "Attractions",
+    "capacity": 2000,
+    "avgVisitor": 35000,
+    "category": "Marketing",
+    "description": "Test docs 2",
+    "status": "Processing"
+  },
+  {
+    "title": "test docs3",
+    "date": "2024-01-18",
+    "businessType": "Attractions",
+    "capacity": 3000,
+    "avgVisitor": 14059,
+    "category": "Marketing",
+    "description": "test docs 3",
+    "status": "Processing"
+  },
+  {
+    "title": "test docs3",
+    "date": "2024-01-18",
+    "businessType": "Attractions",
+    "capacity": 3000,
+    "avgVisitor": 14059,
+    "category": "Marketing",
+    "description": "test docs 3",
+    "status": "Processing"
+  }
+]
