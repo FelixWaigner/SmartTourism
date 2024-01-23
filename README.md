@@ -1,3 +1,22 @@
+
+# MalanGo
+
+The finalised submission for the lecture Global Software Engineering at the TH Nürnberg. 
+
+A prototype for a tourism platform was developed for the government of the city of malang in indonesia. 
+
+The focus here was on collaboration in intercultural and global teams. The team consisted of:
+
+- **Technical University of Nuremberg, Germany**: Felix Waigner, Andreas Roessler
+- **Ritsumeikan University, Japan**: Michael Evan Santoso, Zhang Yuyao, Suntichaikul Pratch
+- **Brawijaya University, indonesia**: Alifsyah Andi
+
+## Protoype showcase
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uOmxHLyteOU?si=sbAWczuJnn5vPgst" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
