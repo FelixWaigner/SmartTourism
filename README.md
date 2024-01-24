@@ -20,3 +20,6 @@ The focus here was on collaboration in intercultural and global teams. The team 
 ## Repository folder structure
 - **Source Code**: The actual software for the prototype.
 - **Related project files**: Files related to the process of planning, development and management of the software.
+
+> [!NOTE] 
+> It is not possible to start the software out of the box from this github GitHub repository have removed all API keys for security reasons.
